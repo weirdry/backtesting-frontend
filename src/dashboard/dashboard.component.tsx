@@ -124,7 +124,7 @@ const Dashboard: React.FC = () => {
       {/* Main Equity Curve */}
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md">
         <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between flex-wrap gap-y-2 items-center">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
               Strategy Equity
             </h3>
@@ -146,7 +146,7 @@ const Dashboard: React.FC = () => {
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart
                 data={equityData}
-                margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+                margin={{ top: 10, right: 0, left: 0, bottom: 0 }}
               >
                 <defs>
                   <linearGradient id="colorEquity" x1="0" y1="0" x2="0" y2="1">
@@ -265,7 +265,7 @@ const Dashboard: React.FC = () => {
           </div>
 
           {/* Key Statistics */}
-          <div className="flex-[2] min-w-[400px] bg-white dark:bg-gray-800 rounded-lg shadow-md">
+          <div className="flex-[2] bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
                 Key Statistics
